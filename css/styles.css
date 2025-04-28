@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: 'Poppins';
+}
+
+.la-piramide {
+  font-family: 'EB Garamond';
+  font-size: 1.2rem;
+}
+
+.firma {
+  font-family: 'EB Garamond';
+  font-size: 1rem;
+  color: #a41;
+}
+
+.la-piramide-p {
+  font-family: 'Poppins';
+  text-align: justify;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+
+
+.img-div {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-div-content {
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+}
+.img-div-content h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 4rem;
+}
+.img-div-content p {
+  padding: 20px 25vw;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.img-div-content button {
+  background-color: #111;
+  border: solid 1px #111;
+  color: white;
+  padding: 5px 30px 5px 30px;
+  font-size: 0.9rem;
+}
+.img-div-filter {
+  width: 100%;
+  height: 100%;
+  background-color: #0006;
+  position: absolute;
+  z-index: 0;
+}
+.img-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.vino {
+  width: 12vw;
+}
+.vinos-button {
+  background-color: #111;
+  border: solid 1px #111;
+  color: white;
+}
+
+.section-nicolas-catena {
+  background-color: #F3EFE9;
+}
+.section-ncz {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+.section-ncz-p1 {
+  grid-row-start: 1;
+  font-family: 'EB Garamond';
+  font-size: 1.2rem;
+  text-align: justify;
+}
+.section-ncz-p2 {
+  grid-column-start: 1;
+  text-align: end;
+  font-family: 'EB Garamond';
+}
+.section-ncz-img {
+  grid-row: 1/3;
+}
+
+.section-nicolas-p {
+  padding: 20px 5vw;
+}
+.section-nicolas-button {
+  background-color: #CFC3B7;
+  border: solid 1px #CFC3B7;
+  color: white;
+}
+
+
+.footer-img {
+  width: 200px;
+}
