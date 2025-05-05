@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 body {
   font-family: "Poppins", sans-serif;
@@ -125,6 +126,106 @@ body {
   background-color: #cfc3b7;
   border: solid 1px #cfc3b7;
   color: white;
+}
+
+.page--contacto .section-principal {
+  background: linear-gradient(to right, #f3efe9, #cfc3b7);
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.page--contacto .section-principal::before {
+  content: "Contáctanos";
+  font-family: "EB Garamond";
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.page--contacto .formulario-section {
+  background: #ffffff;
+  max-width: 600px;
+  margin: -4rem auto 3rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.page--contacto .formulario-section h2 {
+  font-family: "Poppins";
+  font-size: 1.2rem;
+  color: #807262;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.page--contacto .formulario-section form fieldset {
+  border: none;
+  display: grid;
+  gap: 1.25rem;
+}
+.page--contacto .formulario-section form fieldset legend {
+  font-family: "Poppins";
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #7f4a56;
+  margin-bottom: 0.5rem;
+}
+.page--contacto .formulario-section form fieldset div {
+  display: flex;
+  flex-direction: column;
+}
+.page--contacto .formulario-section form fieldset div label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #807262;
+}
+.page--contacto .formulario-section form fieldset div input,
+.page--contacto .formulario-section form fieldset div textarea {
+  font-family: "Poppins";
+  font-size: 1rem;
+  padding: 0.75rem;
+  border: 1px solid white;
+  border-radius: 0.25rem;
+  resize: vertical;
+}
+.page--contacto .formulario-section form fieldset div input:focus,
+.page--contacto .formulario-section form fieldset div textarea:focus {
+  outline: none;
+  border-color: #7f4a56;
+  box-shadow: 0 0 0 2px rgba(127, 74, 86, 0.2);
+}
+.page--contacto .formulario-section form fieldset button {
+  justify-self: end;
+  background: #7f4a56;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.page--contacto .formulario-section form fieldset button:hover {
+  background: rgb(94.776119403, 55.223880597, 64.1791044776);
+}
+.page--contacto .section-mapa {
+  padding: 2rem 0;
+  text-align: center;
+}
+.page--contacto .section-mapa h2 {
+  font-family: "Poppins";
+  font-size: 1.2rem;
+  color: #807262;
+  margin-bottom: 1rem;
+}
+.page--contacto .section-mapa iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /*# sourceMappingURL=styles.css.map */
