@@ -1,0 +1,84 @@
+@use "../partials/variables";
+@use "../partials/typography";
+@use "../partials/responsive";
+
+.page--index {
+  /* seccion de titulo */
+  .titulo {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .titulo__contenido {
+      position: absolute;
+      text-align: center;
+      z-index: 1;
+
+      .titulo__h1 {
+        color: white;
+        font-weight: 700;
+        font-size: 4rem;
+      }
+
+      .titulo__p {
+        padding: 20px 25vw;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 300;
+      }
+
+      button {
+        background-color: #111;
+        border: solid 1px #111;
+        color: white;
+        padding: 5px 30px 5px 30px;
+        font-size: 0.9rem;
+      }
+    }
+
+    .titulo__capa {
+      width: 100%;
+      height: 100%;
+      background-color: #0006;
+      position: absolute;
+      z-index: 0;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  /* seccion de vinos */
+  .vinos-button {
+    background-color: #111;
+    border: solid 1px #111;
+    color: white;
+    font-size: 0.9rem;
+  }
+
+  /* seccion de experiencias */
+  .titulo-experiencies {
+    .titulo-experiencies__titulo2 {
+      font-family: "EB Garamond";
+    }
+  }
+  .experiences {
+    .experiences__container {
+      height: 40vh;
+
+      .experiences__container__item {
+        font-family: "EB Garamond";
+      }
+    }
+  }
+
+  .wine-img {
+    display: block;
+  }
+}

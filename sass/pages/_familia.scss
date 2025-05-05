@@ -1,0 +1,50 @@
+@use "../partials/variables";
+@use "../partials/typography";
+@use "../partials/responsive";
+
+.page--familia {
+  .la-piramide {
+    font-family: "EB Garamond";
+    font-size: 1.2rem;
+  }
+
+  .firma {
+    font-family: "EB Garamond";
+    font-size: 1rem;
+    color: var(--alternative-color);
+  }
+
+  .la-piramide-p {
+    font-family: "Poppins";
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  .section-nicolas {
+    .section-nicolas-catena {
+      background-color: #f3efe9;
+
+      .section-ncz-p1 {
+        font-family: "EB Garamond";
+        font-size: 1.2rem;
+      }
+
+      .section-ncz-p2 {
+        font-family: "EB Garamond";
+        font-size: 0.9rem;
+        color: var(--alternative-color);
+      }
+    }
+
+    .section-nicolas-p {
+      padding: 20px 5vw;
+    }
+
+    .section-nicolas-button {
+      background-color: #cfc3b7;
+      border: solid 1px #cfc3b7;
+      color: white;
+    }
+  }
+}

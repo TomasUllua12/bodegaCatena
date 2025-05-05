@@ -1,0 +1,10 @@
+// Partials
+@use "./partials/variables";
+@use "./partials/typography";
+
+// Pages
+@use "./pages/index";
+@use "./pages/familia";
+
+// Responsive
+@use "./partials/responsive";

@@ -1,39 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
-:root {
-  --just-white: white;
-  --just-black: Black;
-  --primary-color: #f3efe9;
-  --secondary-color: #cfc3b7;
-  --third-color: #807262;
-  --alternative-color: #7f4a56;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 body {
-  font-family: 'Poppins';
+  font-family: "Poppins", sans-serif;
 }
 
-.la-piramide {
-  font-family: 'EB Garamond';
-  font-size: 1.2rem;
+@media (min-width: 576px) {
+  .titulo__h1 {
+    font-size: 2.5rem;
+    padding: 0 10px;
+  }
+  .titulo__p {
+    font-size: 1rem;
+    padding: 20px 15vw;
+  }
+  .wine-2,
+  .wine-3 {
+    display: none;
+  }
 }
-
-.firma {
-  font-family: 'EB Garamond';
-  font-size: 1rem;
-  color: var(--alternative-color);
+@media (min-width: 768px) {
+  .wine-4,
+  .wine-5,
+  .wine-6 {
+    display: none;
+  }
 }
-
-.la-piramide-p {
-  font-family: 'Poppins';
-  text-align: justify;
-  font-size: 1rem;
-  font-weight: 300;
+.page--index {
+  /* seccion de titulo */
+  /* seccion de vinos */
+  /* seccion de experiencias */
 }
-
-
-/* seccion de título */
-.titulo {
+.page--index .titulo {
   width: 100%;
   height: 90vh;
   position: relative;
@@ -41,116 +37,94 @@ body {
   justify-content: center;
   align-items: center;
 }
-.titulo__contenido {
+.page--index .titulo .titulo__contenido {
   position: absolute;
   text-align: center;
   z-index: 1;
 }
-.titulo__h1 {
+.page--index .titulo .titulo__contenido .titulo__h1 {
   color: white;
   font-weight: 700;
   font-size: 4rem;
 }
-.titulo__p {
+.page--index .titulo .titulo__contenido .titulo__p {
   padding: 20px 25vw;
   color: white;
   font-size: 1.2rem;
   font-weight: 300;
 }
-.titulo__contenido button {
+.page--index .titulo .titulo__contenido button {
   background-color: #111;
   border: solid 1px #111;
   color: white;
   padding: 5px 30px 5px 30px;
   font-size: 0.9rem;
 }
-.titulo__capa {
+.page--index .titulo .titulo__capa {
   width: 100%;
   height: 100%;
-  background-color: #0006;
+  background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
   z-index: 0;
 }
-.titulo img {
+.page--index .titulo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
-/* seccion de vinos */
-.vinos-button {
+.page--index .vinos-button {
   background-color: #111;
   border: solid 1px #111;
   color: white;
   font-size: 0.9rem;
 }
-
-/* seccion de experiencias */
-.titulo-experiencies__titulo2 {
-  font-family: 'EB Garamond';
+.page--index .titulo-experiencies .titulo-experiencies__titulo2 {
+  font-family: "EB Garamond";
 }
-
-.experiences__container {
+.page--index .experiences .experiences__container {
   height: 40vh;
 }
-.experiences__container__item {
-  font-family: 'EB Garamond';
+.page--index .experiences .experiences__container .experiences__container__item {
+  font-family: "EB Garamond";
 }
-
-
-
-.section-ncz-p1 {
-  font-family: 'EB Garamond';
-  font-size: 1.2rem;
-}
-.section-ncz-p2 {
-  font-family: 'EB Garamond';
-  font-size: 0.9rem;
-  color: var(--alternative-color);
-}
-
-.section-nicolas-catena {
-  background-color: #F3EFE9;
-}
-
-.section-nicolas-p {
-  padding: 20px 5vw;
-}
-.section-nicolas-button {
-  background-color: #CFC3B7;
-  border: solid 1px #CFC3B7;
-  color: white;
-}
-
-
-
-
-
-.wine-img {
+.page--index .wine-img {
   display: block;
 }
 
-@media (max-width: 768px) {
-  .wine-4,
-  .wine-5,
-  .wine-6 {
-      display: none;
-  }
+.page--familia .la-piramide {
+  font-family: "EB Garamond";
+  font-size: 1.2rem;
+}
+.page--familia .firma {
+  font-family: "EB Garamond";
+  font-size: 1rem;
+  color: var(--alternative-color);
+}
+.page--familia .la-piramide-p {
+  font-family: "Poppins";
+  text-align: justify;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.page--familia .section-nicolas .section-nicolas-catena {
+  background-color: #f3efe9;
+}
+.page--familia .section-nicolas .section-nicolas-catena .section-ncz-p1 {
+  font-family: "EB Garamond";
+  font-size: 1.2rem;
+}
+.page--familia .section-nicolas .section-nicolas-catena .section-ncz-p2 {
+  font-family: "EB Garamond";
+  font-size: 0.9rem;
+  color: var(--alternative-color);
+}
+.page--familia .section-nicolas .section-nicolas-p {
+  padding: 20px 5vw;
+}
+.page--familia .section-nicolas .section-nicolas-button {
+  background-color: #cfc3b7;
+  border: solid 1px #cfc3b7;
+  color: white;
 }
 
-@media (max-width: 576px) {
-  .titulo__h1 {
-      font-size: 2.5rem;
-      padding: 0 10px;
-  }
-
-  .titulo__p {
-      font-size: 1rem; 
-      padding: 20px 15vw;
-  }
-  
-  .wine-2,
-  .wine-3 {
-      display: none;
-  }
-}
+/*# sourceMappingURL=styles.css.map */
