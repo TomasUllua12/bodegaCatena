@@ -1,4 +1,4 @@
-@use "../partials/variables";
+@use "../partials/variables" as *;
 @use "../partials/typography";
 @use "../partials/responsive";
 
@@ -36,6 +36,12 @@
         color: white;
         padding: 5px 30px 5px 30px;
         font-size: 0.9rem;
+        transition: background-color 0.3s ease, border 0.3s ease;
+      }
+
+      button:hover {
+        background-color: $third-color;
+        border: solid 1px $third-color;
       }
     }
 
@@ -55,11 +61,26 @@
   }
 
   /* seccion de vinos */
+  .wine-img {
+    display: block;
+    transition: transform;
+
+    &:hover {
+      transform: scale(1.1) !important;
+    }
+  }
+
   .vinos-button {
     background-color: #111;
     border: solid 1px #111;
     color: white;
     font-size: 0.9rem;
+    transition: background-color 0.3s ease, border 0.3s ease;
+
+    &:hover {
+      background-color: $secondary-color;
+      border: solid 1px $secondary-color;
+    }
   }
 
   /* seccion de experiencias */
@@ -71,14 +92,30 @@
   .experiences {
     .experiences__container {
       height: 40vh;
+      overflow: hidden;
+
+      .experiences__container__item--opacity {
+        background-color: $just-black;
+        opacity: 25%;
+        transition: opacity 0.5s ease;
+      }
+
+      &:hover {
+        .experiences__container__item--opacity {
+          opacity: 50%;
+        }
+
+        .experiences__container__item.img {
+          transform: scale(1.1);
+        }
+      }
 
       .experiences__container__item {
         font-family: "EB Garamond";
+        &.img {
+          transition: transform 0.5s ease;
+        }
       }
     }
-  }
-
-  .wine-img {
-    display: block;
   }
 }

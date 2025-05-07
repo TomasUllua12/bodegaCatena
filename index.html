@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="./css/styles.css">
     <!-- favicon -->
     <link rel="icon" type="image/png" href="./medios/favicon.png">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body class="page--index">
     <!-- header -->
@@ -49,24 +52,24 @@
         <!-- seccion de título -->
         <section class="titulo">
             <div class="titulo__contenido">
-                <h1 class="titulo__h1">WORLD’S BEST VINEYARD 2023</h1>
-                <p class="titulo__p">Argentina tops the list as Catena Zapata in Mendoza is voted number one in the World’s Best Vineyards 2023.</p>
-                <button><a class="text-decoration-none text-light" href="https://drive.google.com/file/d/1_zF5wrxGrFkNyiSnP1xLwTBvBX-5iYDr/view" target="_blank">More details</a></button>
+                <h1 class="titulo__h1" data-aos="fade-up" data-aos-duration="1200">WORLD’S BEST VINEYARD 2023</h1>
+                <p class="titulo__p" data-aos="fade-up" data-aos-duration="1400">Argentina tops the list as Catena Zapata in Mendoza is voted number one in the World’s Best Vineyards 2023.</p>
+                <button data-aos="fade-up" data-aos-duration="1600"><a class="text-decoration-none text-light" href="https://drive.google.com/file/d/1_zF5wrxGrFkNyiSnP1xLwTBvBX-5iYDr/view" target="_blank">More details</a></button>
             </div>
             <div class="titulo__capa"></div>
             <img src="./medios/piramide.jpg" alt="Piramide">
         </section>
 
         <!-- seccion de vinos -->
-        <section class="container-fluid text-center">
+        <section class="vinos container-fluid text-center">
             <h2 class="text-center mt-5 p-5 fw-semibold">Nuestros vinos</h2>
             <div class="container d-flex justify-content-center mb-5"> 
-                <img class="col-md-2 col-sm-4 col-6 wine-img wine-1" src="./medios/wines/NCZV1.png" alt="">
-                <img class="col-md-2 col-sm-4 wine-img wine-2" src="./medios/wines/MAV2.png" alt="">
-                <img class="col-md-2 col-sm-4 wine-img wine-3" src="./medios/wines/BOCV3.png" alt="">
-                <img class="col-md-2 wine-img wine-4" src="./medios/wines/NVV4.png" alt="">
-                <img class="col-md-2 wine-img wine-5" src="./medios/wines/AVV5.png" alt="">
-                <img class="col-md-2 wine-img wine-6" src="./medios/wines/CAV6.png" alt="">
+                <img class="col-md-2 col-sm-4 col-6 wine-img wine-1" data-aos="fade-up" data-aos-duration="1400" src="./medios/wines/NCZV1.png" alt="">
+                <img class="col-md-2 col-sm-4 wine-img wine-2" data-aos="fade-up" data-aos-duration="1800" src="./medios/wines/MAV2.png" alt="">
+                <img class="col-md-2 col-sm-4 wine-img wine-3" data-aos="fade-up" data-aos-duration="1400" src="./medios/wines/BOCV3.png" alt="">
+                <img class="col-md-2 wine-img wine-4" data-aos="fade-up" data-aos-duration="1800" src="./medios/wines/NVV4.png" alt="">
+                <img class="col-md-2 wine-img wine-5" data-aos="fade-up" data-aos-duration="1400" src="./medios/wines/AVV5.png" alt="">
+                <img class="col-md-2 wine-img wine-6" data-aos="fade-up" data-aos-duration="1800" src="./medios/wines/CAV6.png" alt="">
             </div>
             <button class="vinos-button m-5 px-5 py-1"><a class="text-decoration-none text-light" href="./pages/vinos.html">Ver más</a></button>
         </section>
@@ -74,25 +77,88 @@
         <!-- seccion experiencias -->
         <section>
             <div class="titulo-experiencies container text-center">
-                <h2 class="titulo-experiencies__titulo mt-5">NUESTRAS EXPERIENCIAS</h2>
-                <h3 class="titulo-experiencies__titulo2">LA PIRÁMIDE</h3>
-                <p class="titulo-experiencies__texto m-5">Si está planeando un viaje a Mendoza, nos encantaría que nos visite en La Pirámide, nuestra bodega familiar. <br> Nuestros guías especializados realizan tours para grupos reducidos, por lo que recomendamos reservar un día y horario con anticipación.</p>
+                <h2 class="titulo-experiencies__titulo mt-5">OUR EXPERIENCES AT</h2>
+                <h3 class="titulo-experiencies__titulo2">THE PYRAMID</h3>
+                <p class="titulo-experiencies__texto m-4 mb-5">If you plan to visit Mendoza, we would love to host you in our family winery. <br> Our tours are conducted by specialized guides in small groups, so we encourage you to book a date and time in advance.</p>
             </div>
             <div class="experiences row container-fluid p-0 m-0">
+
+                <!-- experiencia La Familia Es Todo -->
                 <div class="experiences__container col-md-4 col-sm-12 position-relative">
-                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-25 z-1"></div>
-                    <p class="experiences__container__item m-0 position-absolute z-2 top-50 start-50 translate-middle text-white text-center fw-medium">LA FAMILIA ES TODO</p>
-                    <img class="experiences__container__item position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-0" src="./medios/experiences/exp1.jpg" alt="La familia es todo">
+                    <a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFamily" aria-controls="offcanvasFamily">
+                        <div class="experiences__container__item--opacity position-absolute top-0 start-0 w-100 h-100 z-1"></div>
+                        <p class="experiences__container__item m-0 position-absolute z-2 top-50 start-50 translate-middle text-white text-center fw-medium">FAMILY IS EVERYTHING</p>
+                        <img class="experiences__container__item img position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-0" src="./medios/experiences/exp1.jpg" alt="FAMILY IS EVERYTHING">
+                    </a>
                 </div>
-                <div class="experiences__container col-md-4 col-sm-12 position-relative">
-                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-25 z-1"></div>
-                    <p class="experiences__container__item m-0 position-absolute z-2 top-50 start-50 translate-middle text-white text-center fw-medium">VINO & MÚSICA</p>
-                    <img class="experiences__container__item position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-0" src="./medios/experiences/exp2.jpg" alt="Vino y música">
+                <!-- Offcanvas de FAMILY IS EVERYTHING -->
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasFamily" aria-labelledby="offcanvasFamilyLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title fw-bold" id="offcanvasFamilyLabel">FAMILY IS EVERYTHING</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <p>From Italy to Mendoza, from Bonarda to Malbec, the story of the Catena Zapata family is part of the history of Argentine wine. Let Catena Zapata’s iconic wines tell you the centuries-old history of the family that redefined the word “wine” in Argentina.</p>
+                      <p>Includes:</p>
+                      <ul>
+                        <li>Winery tour</li>
+                        <li>Tasting of 5 Wines:
+                            <ul>
+                                <li>SAINT FELICIEN Bonarda</li>
+                                <li>D.V. CATENA Malbec-Malbec</li>
+                                <li>ANGÉLICA ZAPATA Chardonnay ALTA</li>
+                                <li>MALBEC ARGENTINO</li>
+                                <li>NICOLÁS CATENA ZAPATA</li>
+                            </ul>
+                        </li>
+                      </ul>
+                      <p>Groups of up to 10 people</p>
+                      <p>Duration: 2hs</p>
+                      <p>Price:</p>
+                      <ul>
+                        <li>AR$ 149,000 p/p valid from May 1, 2025 to June 28, 2025</li>
+                        <li>AR$ 155,000 p/p valid from July 1, 2025 to August 30, 2025</li>
+                      </ul>
+                      <button class="vinos-button mt-5 px-5 py-1"><a class="text-decoration-none text-light" href="./pages/contacto.html">Reservar</a></button>
+                    </div>
                 </div>
+
+                <!-- experiencia Vino & Musica -->
                 <div class="experiences__container col-md-4 col-sm-12 position-relative">
-                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-25 z-1"></div>
-                    <p class="experiences__container__item m-0 position-absolute z-2 top-50 start-50 translate-middle text-white text-center fw-medium">THE BLENDING GAMES</p>
-                    <img class="experiences__container__item position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-0" src="./medios/experiences/exp3.jpg" alt="blending games">
+                    <a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasVinoYMusica" aria-controls="offcanvasVinoYMusica">
+                        <div class="experiences__container__item--opacity position-absolute top-0 start-0 w-100 h-100 z-1"></div>
+                        <p class="experiences__container__item m-0 position-absolute z-2 top-50 start-50 translate-middle text-white text-center fw-medium">WINE & MUSIC</p>
+                        <img class="experiences__container__item img position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-0" src="./medios/experiences/exp2.jpg" alt="Vino y música">
+                    </a>
+                </div>
+                <!-- Offcanvas de Vino & Musica -->
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasVinoYMusica" aria-labelledby="offcanvasVinoYMusicaLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasVinoYMusicaLabel">WINE & MUSIC</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <p>Try scrolling the rest of the page to see this option in action.</p>
+                    </div>
+                </div>
+                
+                <!-- experiencia The Blending Games -->
+                <div class="experiences__container col-md-4 col-sm-12 position-relative">
+                    <a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBlendingGames" aria-controls="offcanvasBlendingGames">
+                        <div class="experiences__container__item--opacity position-absolute top-0 start-0 w-100 h-100 z-1"></div>
+                        <p class="experiences__container__item m-0 position-absolute z-2 top-50 start-50 translate-middle text-white text-center fw-medium">THE BLENDING GAMES</p>
+                        <img class="experiences__container__item img position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-0" src="./medios/experiences/exp3.jpg" alt="blending games">
+                    </a>
+                </div>
+                <!-- Offcanvas de The Blending Games -->
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasBlendingGames" aria-labelledby="offcanvasBlendingGamesLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasBlendingGamesLabel">THE BLENDING GAMES</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <p>Try scrolling the rest of the page to see this option in action.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -124,5 +190,10 @@
 
     <!-- Bootstrap CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

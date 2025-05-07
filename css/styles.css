@@ -60,6 +60,11 @@ body {
   color: white;
   padding: 5px 30px 5px 30px;
   font-size: 0.9rem;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+.page--index .titulo .titulo__contenido button:hover {
+  background-color: #807262;
+  border: solid 1px #807262;
 }
 .page--index .titulo .titulo__capa {
   width: 100%;
@@ -73,56 +78,87 @@ body {
   height: 100%;
   object-fit: cover;
 }
+.page--index .wine-img {
+  display: block;
+  transition: transform;
+}
+.page--index .wine-img:hover {
+  transform: scale(1.1) !important;
+}
 .page--index .vinos-button {
   background-color: #111;
   border: solid 1px #111;
   color: white;
   font-size: 0.9rem;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+.page--index .vinos-button:hover {
+  background-color: #cfc3b7;
+  border: solid 1px #cfc3b7;
 }
 .page--index .titulo-experiencies .titulo-experiencies__titulo2 {
   font-family: "EB Garamond";
 }
 .page--index .experiences .experiences__container {
   height: 40vh;
+  overflow: hidden;
+}
+.page--index .experiences .experiences__container .experiences__container__item--opacity {
+  background-color: #000000;
+  opacity: 25%;
+  transition: opacity 0.5s ease;
+}
+.page--index .experiences .experiences__container:hover .experiences__container__item--opacity {
+  opacity: 50%;
+}
+.page--index .experiences .experiences__container:hover .experiences__container__item.img {
+  transform: scale(1.1);
 }
 .page--index .experiences .experiences__container .experiences__container__item {
   font-family: "EB Garamond";
 }
-.page--index .wine-img {
-  display: block;
+.page--index .experiences .experiences__container .experiences__container__item.img {
+  transition: transform 0.5s ease;
 }
 
-.page--familia .la-piramide {
+.page--familia main .lapiramide .la-piramide {
   font-family: "EB Garamond";
   font-size: 1.2rem;
 }
-.page--familia .firma {
+.page--familia main .lapiramide .firma {
   font-family: "EB Garamond";
   font-size: 1rem;
-  color: var(--alternative-color);
+  color: #7f4a56;
 }
-.page--familia .la-piramide-p {
+.page--familia main .lapiramide .la-piramide-p {
   font-family: "Poppins";
   text-align: justify;
   font-size: 1rem;
   font-weight: 300;
 }
-.page--familia .section-nicolas .section-nicolas-catena {
+.page--familia main .lapiramide .la-piramide-button {
+  background-color: #cfc3b7;
+  border: solid 1px #cfc3b7;
+  color: #807262;
+  width: auto;
+  font-size: 0.9rem;
+}
+.page--familia main .section-nicolas .section-nicolas-catena {
   background-color: #f3efe9;
 }
-.page--familia .section-nicolas .section-nicolas-catena .section-ncz-p1 {
+.page--familia main .section-nicolas .section-nicolas-catena .section-ncz-p1 {
   font-family: "EB Garamond";
   font-size: 1.2rem;
 }
-.page--familia .section-nicolas .section-nicolas-catena .section-ncz-p2 {
+.page--familia main .section-nicolas .section-nicolas-catena .section-ncz-p2 {
   font-family: "EB Garamond";
   font-size: 0.9rem;
-  color: var(--alternative-color);
+  color: #7f4a56;
 }
-.page--familia .section-nicolas .section-nicolas-p {
+.page--familia main .section-nicolas .section-nicolas-p {
   padding: 20px 5vw;
 }
-.page--familia .section-nicolas .section-nicolas-button {
+.page--familia main .section-nicolas .section-nicolas-button {
   background-color: #cfc3b7;
   border: solid 1px #cfc3b7;
   color: white;
