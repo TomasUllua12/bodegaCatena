@@ -124,6 +124,15 @@ body {
 .page--index .experiences .experiences__container .experiences__container__item.img {
   transition: transform 0.5s ease;
 }
+.page--index .experiences .offcanvas .offcanvas-header .offcanvas-title {
+  font-family: "EB Garamond";
+}
+.page--index .experiences .offcanvas .offcanvas-body p {
+  font-size: 0.9rem;
+}
+.page--index .experiences .offcanvas .offcanvas-body ul li {
+  font-size: 0.9rem;
+}
 
 @media (max-width: 576px) {
   .page--index .titulo .titulo__contenido .titulo__h1 {

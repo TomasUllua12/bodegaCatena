@@ -1,7 +1,6 @@
 @use "../partials/variables" as *;
 @use "../partials/typography";
 
-
 @keyframes fade-up {
   from {
     opacity: 0;
@@ -85,7 +84,7 @@
   /* seccion de vinos */
   .vinos {
     .hover-wrapper {
-      transition: transform 0.8s ;
+      transition: transform 0.8s;
 
       .wine-img {
         display: block;
@@ -144,6 +143,25 @@
         font-family: "EB Garamond";
         &.img {
           transition: transform 0.5s ease;
+        }
+      }
+    }
+
+    .offcanvas {
+      .offcanvas-header {
+        .offcanvas-title {
+          font-family: "EB Garamond";
+        }
+      }
+
+      .offcanvas-body {
+        p {
+          font-size: 0.9rem;
+        }
+        ul {
+          li {
+            font-size: 0.9rem;
+          }
         }
       }
     }
