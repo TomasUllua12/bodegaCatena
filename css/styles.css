@@ -4,7 +4,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   .titulo__h1 {
     font-size: 2.5rem;
     padding: 0 10px;
@@ -13,16 +13,16 @@ body {
     font-size: 1rem;
     padding: 20px 15vw;
   }
-  .wine-2,
-  .wine-3 {
-    display: none;
+  .vinos .wine-2,
+  .vinos .wine-3 {
+    display: none !important;
   }
 }
-@media (min-width: 768px) {
-  .wine-4,
-  .wine-5,
-  .wine-6 {
-    display: none;
+@media (max-width: 768px) {
+  .vinos .wine-4,
+  .vinos .wine-5,
+  .vinos .wine-6 {
+    display: none !important;
   }
 }
 .page--index {
