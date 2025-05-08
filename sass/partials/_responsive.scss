@@ -30,12 +30,12 @@
       }
     }
 
-    
-
     .vinos {
-      .wine-2,
-      .wine-3 {
-        display: none
+      .hover-wrapper {
+        .wine-2,
+        .wine-3 {
+          display: none;
+        }
       }
     }
   }
@@ -44,10 +44,12 @@
 @include respond-to(medium) {
   .page--index {
     .vinos {
-      .wine-4,
-      .wine-5,
-      .wine-6 {
-        display: none;
+      .hover-wrapper {
+        .wine-4,
+        .wine-5,
+        .wine-6 {
+          display: none;
+        }
       }
     }
   }
