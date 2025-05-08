@@ -1,20 +1,6 @@
 @use "./variables" as *;
 
-@mixin respond-to($breakpoint) {
-  @if $breakpoint == small {
-    @media (max-width: 576px) {
-      @content;
-    }
-  } @else if $breakpoint == medium {
-    @media (max-width: 768px) {
-      @content;
-    }
-  } @else {
-    @warn "Breakpoint `#{$breakpoint}` no definido.";
-  }
-}
-
-@include respond-to(small) {
+@media (max-width: 576px) {
   .page--index {
     .titulo {
       .titulo__contenido {
@@ -41,7 +27,7 @@
   }
 }
 
-@include respond-to(medium) {
+@media (max-width: 768px) {
   .page--index {
     .vinos {
       .hover-wrapper {
