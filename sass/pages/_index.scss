@@ -1,6 +1,17 @@
 @use "../partials/variables" as *;
 @use "../partials/typography";
-@use "../partials/responsive";
+
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
 
 .page--index {
   /* seccion de titulo */
@@ -21,6 +32,7 @@
         color: white;
         font-weight: 700;
         font-size: 4rem;
+        animation: fade-up 0.8s ease;
       }
 
       .titulo__p {
@@ -61,12 +73,14 @@
   }
 
   /* seccion de vinos */
-  .wine-img {
-    display: block;
-    transition: transform;
-
-    &:hover {
-      transform: scale(1.1) !important;
+  .vinos {
+    .wine-img {
+      display: block;
+      transition: transform;
+  
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 
@@ -119,3 +133,6 @@
     }
   }
 }
+
+// Responsive
+@import "../partials/responsive";

@@ -4,25 +4,14 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-@media (max-width: 576px) {
-  .titulo__h1 {
-    font-size: 2.5rem;
-    padding: 0 10px;
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
   }
-  .titulo__p {
-    font-size: 1rem;
-    padding: 20px 15vw;
-  }
-  .vinos .wine-2,
-  .vinos .wine-3 {
-    display: none !important;
-  }
-}
-@media (max-width: 768px) {
-  .vinos .wine-4,
-  .vinos .wine-5,
-  .vinos .wine-6 {
-    display: none !important;
+  to {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
   }
 }
 .page--index {
@@ -47,6 +36,7 @@ body {
   color: white;
   font-weight: 700;
   font-size: 4rem;
+  animation: fade-up 0.8s ease;
 }
 .page--index .titulo .titulo__contenido .titulo__p {
   padding: 20px 25vw;
@@ -78,12 +68,12 @@ body {
   height: 100%;
   object-fit: cover;
 }
-.page--index .wine-img {
+.page--index .vinos .wine-img {
   display: block;
   transition: transform;
 }
-.page--index .wine-img:hover {
-  transform: scale(1.1) !important;
+.page--index .vinos .wine-img:hover {
+  transform: scale(1.1);
 }
 .page--index .vinos-button {
   background-color: #111;
@@ -121,6 +111,48 @@ body {
   transition: transform 0.5s ease;
 }
 
+@media (max-width: 576px) {
+  .page--index .titulo .titulo__contenido .titulo__h1 {
+    font-size: 2.6rem;
+    padding: 0 40px;
+  }
+  .page--index .titulo .titulo__contenido .titulo__p {
+    font-size: 1rem;
+    padding: 20px 80px;
+  }
+  .page--index .vinos .wine-2,
+  .page--index .vinos .wine-3 {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .page--index .vinos .wine-4,
+  .page--index .vinos .wine-5,
+  .page--index .vinos .wine-6 {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .page--index .titulo .titulo__contenido .titulo__h1 {
+    font-size: 2.6rem;
+    padding: 0 40px;
+  }
+  .page--index .titulo .titulo__contenido .titulo__p {
+    font-size: 1rem;
+    padding: 20px 80px;
+  }
+  .page--index .vinos .wine-2,
+  .page--index .vinos .wine-3 {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .page--index .vinos .wine-4,
+  .page--index .vinos .wine-5,
+  .page--index .vinos .wine-6 {
+    display: none;
+  }
+}
 .page--familia main .lapiramide .la-piramide {
   font-family: "EB Garamond";
   font-size: 1.2rem;
