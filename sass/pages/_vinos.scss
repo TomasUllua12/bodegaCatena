@@ -2,10 +2,21 @@
 @use "../partials/typography";
 
 .page--vinos {
+  header {
+    .navbar {
+      box-shadow: 0px 0px 100px 100px #000;
+      z-index: 1;
+    }
+  }
   .vinos {
     .wines {
       h2 {
-        font-family: 'EB Garamond';
+        font-family: "EB Garamond";
+        padding-top: 2%;
+      }
+
+      h3 {
+        padding-top: 10%;
       }
       .hover-wrapper {
         transition: transform 0.8s;
@@ -22,6 +33,24 @@
           transform: scale(1.1);
         }
       }
+    }
+  }
+}
+
+// Responsive
+@import "../partials/responsive";
+
+@include respond-to(small) {
+  .page--vinos {
+    header {
+      .navbar {
+        box-shadow: 0px 0px 35px 30px #000;
+        z-index: 1;
+      }
+    }
+
+    .lapiramide {
+      padding: 0px 10%;
     }
   }
 }
