@@ -1,0 +1,27 @@
+@use "../partials/variables" as *;
+@use "../partials/typography";
+
+.page--vinos {
+  .vinos {
+    .wines {
+      h2 {
+        font-family: 'EB Garamond';
+      }
+      .hover-wrapper {
+        transition: transform 0.8s;
+        padding: 3% 0;
+
+        .wine-img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}

@@ -1,10 +1,32 @@
 @use "../partials/variables" as *;
 @use "../partials/typography";
-@use "../partials/responsive";
+
+%btn-base {
+  background-color: $secondary-color;
+  border: solid 1px $secondary-color;
+  color: $just-white;
+  width: auto;
+  font-size: 0.9rem;
+  transition: background 0.3s ease, border 0.3s ease;
+}
+%btn-base-hover {
+  background-color: $third-color;
+  border: solid 1px $third-color;
+}
 
 .page--familia {
+  header {
+    .navbar {
+      box-shadow: 0px 0px 100px 100px #000;
+      z-index: 1;
+    }
+  }
+
   main {
     .lapiramide {
+      h1 {
+        font-family: "EB Garamond";
+      }
       .la-piramide {
         font-family: "EB Garamond";
         font-size: 1.2rem;
@@ -24,11 +46,11 @@
       }
 
       .la-piramide-button {
-        background-color: $secondary-color;
-        border: solid 1px $secondary-color;
-        color: $third-color;
-        width: auto;
-        font-size: 0.9rem;
+        @extend %btn-base;
+
+        &:hover {
+          @extend %btn-base-hover;
+        }
       }
     }
 
@@ -53,10 +75,30 @@
       }
 
       .section-nicolas-button {
-        background-color: #cfc3b7;
-        border: solid 1px #cfc3b7;
-        color: white;
+        @extend %btn-base;
+
+        &:hover {
+          @extend %btn-base-hover;
+        }
       }
+    }
+  }
+}
+
+// Responsive
+@import "../partials/responsive";
+
+@include respond-to(small) {
+  .page--familia {
+    header {
+      .navbar {
+        box-shadow: 0px 0px 35px 30px #000;
+        z-index: 1;
+      }
+    }
+
+    .lapiramide {
+      padding: 0px 10%;
     }
   }
 }

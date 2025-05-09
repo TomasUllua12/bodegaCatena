@@ -1,0 +1,29 @@
+@use "../partials/variables" as *;
+@use "../partials/typography";
+
+.page--ncz {
+  main {
+    .ncz {
+      background-color: $just-black;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 2%;
+      padding-top: 1%;
+      .ncz-video {
+        width: 70%;
+        video {
+          width: 100%;
+        }
+      }
+    }
+
+    .lapiramide {
+      h1 {
+        font-family: "EB Garamond";
+      }
+    }
+  }
+}
+
+// Responsive
+@import "../partials/responsive";
