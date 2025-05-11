@@ -21,9 +21,33 @@
       h1 {
         font-family: "EB Garamond";
       }
+
+      .la-piramide {
+        font-family: "EB Garamond";
+        font-size: 1.1rem;
+      }
+      .firma {
+        font-family: "EB Garamond";
+        color: $alternative-color
+      }
     }
   }
 }
 
 // Responsive
 @import "../partials/responsive";
+
+@include respond-to(small) {
+  .page--ncz {
+    header {
+      .navbar {
+        box-shadow: 0px 0px 35px 30px #000;
+        z-index: 1;
+      }
+    }
+
+    .la-piramide {
+      padding: 0px 10%;
+    }
+  }
+}
