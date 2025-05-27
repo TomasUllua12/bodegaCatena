@@ -234,11 +234,15 @@ body {
   box-shadow: 0px 0px 100px 100px #000;
   z-index: 1;
 }
+.page--contacto .contacto-head {
+  text-align: center;
+  padding: 2% 0;
+}
 .page--contacto .contacto-head h2 {
   font-family: "EB Garamond";
 }
 .page--contacto .formulario {
-  padding: 1rem;
+  padding: 2rem;
   max-width: 500px;
   margin: 0 auto;
 }
@@ -316,25 +320,75 @@ body {
 .page--ncz main .ncz .ncz-video video {
   width: 100%;
 }
+.page--ncz main .lapiramide {
+  box-sizing: border-box;
+  padding: 0 15vw;
+}
 .page--ncz main .lapiramide h1 {
   font-family: "EB Garamond";
+  text-align: center;
+  margin-top: 5%;
+  font-size: 2rem;
 }
-.page--ncz main .lapiramide .la-piramide {
+.page--ncz main .lapiramide .container-flex {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.page--ncz main .lapiramide .container-flex .decanter-img {
+  min-width: 200px;
+  width: 30%;
+}
+.page--ncz main .lapiramide .container-flex .decanter-img img {
+  max-width: 100%;
+  height: auto;
+  padding: 5%;
+}
+.page--ncz main .lapiramide .container-flex .la-piramide {
+  width: 70%;
+  max-width: 100%;
+}
+.page--ncz main .lapiramide .container-flex .la-piramide p {
   font-family: "EB Garamond";
   font-size: 1.1rem;
+  text-align: justify;
+  padding: 3% 1%;
 }
-.page--ncz main .lapiramide .firma {
+.page--ncz main .lapiramide .container-flex .la-piramide .firma {
   font-family: "EB Garamond";
   color: #7f4a56;
+  text-align: end;
 }
 
+@media (max-width: 992px) {
+  .page--ncz main .lapiramide {
+    padding: 0 15vw;
+  }
+  .page--ncz main .lapiramide .container-flex {
+    width: 100%;
+  }
+  .page--ncz main .lapiramide .container-flex .decanter-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .page--ncz main .lapiramide .container-flex .la-piramide {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .page--ncz main .lapiramide {
+    padding: 0 5vw;
+  }
+}
 @media (max-width: 576px) {
   .page--ncz header .navbar {
     box-shadow: 0px 0px 35px 30px #000;
     z-index: 1;
   }
-  .page--ncz .la-piramide {
-    padding: 0px 10%;
+  .page--ncz main .lapiramide h1 {
+    font-size: 1.5rem;
   }
 }
 .page--vinos header .navbar {
@@ -371,22 +425,74 @@ body {
     padding: 0px 10%;
   }
 }
+.page--adrianna header .navbar {
+  box-shadow: 0px 0px 35px 30px #000;
+  z-index: 1;
+}
+.page--adrianna main .adrianna {
+  box-sizing: border-box;
+  padding: 0 15vw;
+}
 .page--adrianna main .adrianna h1 {
   font-family: "EB Garamond";
+  text-align: center;
+  margin-top: 5%;
+  font-size: 2rem;
 }
-.page--adrianna main .adrianna .adrianna-p {
+.page--adrianna main .adrianna .container-flex {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.page--adrianna main .adrianna .container-flex .stone-img {
+  min-width: 200px;
+  width: 45%;
+}
+.page--adrianna main .adrianna .container-flex .stone-img img {
+  max-width: 100%;
+  height: auto;
+  padding: 5%;
+}
+.page--adrianna main .adrianna .container-flex .stone-p {
+  width: 55%;
+  max-width: 100%;
+}
+.page--adrianna main .adrianna .container-flex .stone-p .adrianna-p {
   font-family: "EB Garamond";
   font-size: 1.1rem;
   text-align: justify;
+  padding: 3% 1%;
 }
 
+@media (max-width: 992px) {
+  .page--adrianna main .adrianna {
+    padding: 0 15vw;
+  }
+  .page--adrianna main .adrianna .container-flex {
+    width: 100%;
+  }
+  .page--adrianna main .adrianna .container-flex .stone-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .page--adrianna main .adrianna .container-flex .stone-p {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .page--adrianna main .adrianna {
+    padding: 0 5vw;
+  }
+}
 @media (max-width: 576px) {
   .page--adrianna header .navbar {
     box-shadow: 0px 0px 35px 30px #000;
     z-index: 1;
   }
-  .page--adrianna .adrianna-p {
-    padding: 0 10%;
+  .page--adrianna main .adrianna h1 {
+    font-size: 1.5rem;
   }
 }
 

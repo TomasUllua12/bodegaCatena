@@ -53,36 +53,37 @@
   </header>
 
   <main>
+    <!-- Full Main sin Bootstrap -->
     <section class="tour-virtual">
       <iframe width="100%" height="700" src="https://catenawines.com/tourvirtual/index.html?startscene=0"
         frameborder="0" allow="accelerometer; gyroscope;" allowfullscreen=""></iframe>
     </section>
-    <section class="contacto-head container text-center p-5">
-      <h2>Contáctanos</h2>
+    <section class="contacto-head">
+      <h2>Contact us</h2>
     </section>
-    <section class="formulario container">
+    <section class="formulario">
       <form action="/submit" method="post">
         <div>
-          <label for="nombre_apellido">Nombre y Apellido:</label>
+          <label for="nombre_apellido">Name & Surname:</label>
           <input type="text" id="nombre_apellido" name="nombre_apellido" required placeholder="Juan Pérez">
         </div>
 
         <div>
-          <label for="correo">Correo electrónico:</label>
+          <label for="correo">Email:</label>
           <input type="email" id="correo" name="correo" required placeholder="juan@gmail.com">
         </div>
 
         <div>
-          <label for="asunto">Asunto:</label>
-          <input type="text" id="asunto" name="asunto" required placeholder="Asunto del mensaje">
+          <label for="asunto">Subject:</label>
+          <input type="text" id="asunto" name="asunto" required placeholder="Subject of the message">
         </div>
 
         <div>
-          <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Mensaje aquí..."></textarea>
+          <label for="mensaje">Message:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Message here..."></textarea>
         </div>
 
-        <button type="submit">Enviar</button>
+        <button type="submit">Send</button>
       </form>
     </section>
     <section class="section-mapa" aria-labelledby="mapa-heading">

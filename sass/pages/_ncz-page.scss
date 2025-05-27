@@ -20,18 +20,50 @@
     }
 
     .lapiramide {
+      box-sizing: border-box;
+      padding: 0 15vw;
+
       h1 {
         font-family: "EB Garamond";
+        text-align: center;
+        margin-top: 5%;
+        font-size: 2rem;
       }
 
-      .la-piramide {
-        font-family: "EB Garamond";
-        font-size: 1.1rem;
-      }
+      .container-flex {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
 
-      .firma {
-        font-family: "EB Garamond";
-        color: $alternative-color
+        .decanter-img {
+          min-width: 200px;
+          width: 30%;
+
+          img {
+            max-width: 100%;
+            height: auto;
+            padding: 5%;
+          }
+        }
+
+        .la-piramide {
+          width: 70%;
+          max-width: 100%;
+
+          p {
+            font-family: "EB Garamond";
+            font-size: 1.1rem;
+            text-align: justify;
+            padding: 3% 1%;
+          }
+
+          .firma {
+            font-family: "EB Garamond";
+            color: $alternative-color;
+            text-align: end;
+          }
+        }
       }
     }
   }
@@ -39,6 +71,40 @@
 
 // Responsive
 @import "../partials/responsive";
+
+@include respond-to(large) {
+  .page--ncz {
+    main {
+      .lapiramide {
+        padding: 0 15vw;
+
+        .container-flex {
+          width: 100%;
+
+          .decanter-img {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+          }
+
+          .la-piramide {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(medium) {
+  .page--ncz {
+    main {
+      .lapiramide {
+        padding: 0 5vw;
+      }
+    }
+  }
+}
 
 @include respond-to(small) {
   .page--ncz {
@@ -49,8 +115,12 @@
       }
     }
 
-    .la-piramide {
-      padding: 0px 10%;
+    main {
+      .lapiramide {
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
     }
   }
 }

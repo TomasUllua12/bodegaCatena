@@ -2,16 +2,53 @@
 @use "../partials/typography";
 
 .page--adrianna {
+  header {
+    .navbar {
+      box-shadow: 0px 0px 35px 30px #000;
+      z-index: 1;
+    }
+  }
+
   main {
     .adrianna {
+      box-sizing: border-box;
+      padding: 0 15vw;
+
       h1 {
         font-family: "EB Garamond";
+        text-align: center;
+        margin-top: 5%;
+        font-size: 2rem;
       }
 
-      .adrianna-p {
-        font-family: "EB Garamond";
-        font-size: 1.1rem;
-        text-align: justify
+      .container-flex {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .stone-img {
+          min-width: 200px;
+          width: 45%;
+
+          img {
+            max-width: 100%;
+            height: auto;
+            padding: 5%;
+          }
+        }
+
+        .stone-p {
+          width: 55%;
+          max-width: 100%;
+
+          .adrianna-p {
+            font-family: "EB Garamond";
+            font-size: 1.1rem;
+            text-align: justify;
+            padding: 3% 1%;
+          }
+        }
       }
     }
   }
@@ -19,6 +56,40 @@
 
 // Responsive
 @import "../partials/responsive";
+
+@include respond-to(large) {
+  .page--adrianna {
+    main {
+      .adrianna {
+        padding: 0 15vw;
+
+        .container-flex {
+          width: 100%;
+
+          .stone-img {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+          }
+
+          .stone-p {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(medium) {
+  .page--adrianna {
+    main {
+      .adrianna {
+        padding: 0 5vw;
+      }
+    }
+  }
+}
 
 @include respond-to(small) {
   .page--adrianna {
@@ -29,8 +100,12 @@
       }
     }
 
-    .adrianna-p {
-      padding: 0 10%;
+    main {
+      .adrianna {
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
     }
   }
 }
