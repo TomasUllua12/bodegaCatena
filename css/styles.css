@@ -439,26 +439,37 @@ body {
   margin-top: 5%;
   font-size: 2rem;
 }
-.page--adrianna main .adrianna .container-flex {
+.page--adrianna main .adrianna .container-grid {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  grid-template-rows: auto 2fr;
 }
-.page--adrianna main .adrianna .container-flex .stone-img {
+.page--adrianna main .adrianna .container-grid .stone-img {
   min-width: 200px;
-  width: 45%;
+  width: 100%;
+  grid-row: 1/3;
 }
-.page--adrianna main .adrianna .container-flex .stone-img img {
+.page--adrianna main .adrianna .container-grid .stone-img img {
   max-width: 100%;
   height: auto;
   padding: 5%;
 }
-.page--adrianna main .adrianna .container-flex .stone-p {
-  width: 55%;
+.page--adrianna main .adrianna .container-grid .stone-p1 {
+  width: 100%;
   max-width: 100%;
 }
-.page--adrianna main .adrianna .container-flex .stone-p .adrianna-p {
+.page--adrianna main .adrianna .container-grid .stone-p1 .adrianna-p {
+  font-family: "EB Garamond";
+  font-size: 1.1rem;
+  text-align: justify;
+  padding: 3% 1%;
+}
+.page--adrianna main .adrianna .container-grid .stone-p2 {
+  width: 100%;
+  max-width: 100%;
+}
+.page--adrianna main .adrianna .container-grid .stone-p2 .adrianna-p {
   font-family: "EB Garamond";
   font-size: 1.1rem;
   text-align: justify;
@@ -469,16 +480,22 @@ body {
   .page--adrianna main .adrianna {
     padding: 0 15vw;
   }
-  .page--adrianna main .adrianna .container-flex {
+  .page--adrianna main .adrianna .container-grid {
     width: 100%;
   }
-  .page--adrianna main .adrianna .container-flex .stone-img {
+  .page--adrianna main .adrianna .container-grid .stone-img {
     width: 100%;
-    display: flex;
-    justify-content: center;
+    grid-column: 1/3;
   }
-  .page--adrianna main .adrianna .container-flex .stone-p {
+  .page--adrianna main .adrianna .container-grid .stone-p1 {
     width: 100%;
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  .page--adrianna main .adrianna .container-grid .stone-p2 {
+    width: 100%;
+    grid-column: 1/3;
+    grid-row: 4/5;
   }
 }
 @media (max-width: 768px) {
