@@ -6,6 +6,7 @@
     opacity: 0;
     transform: translateY(30px) scale(0.9);
   }
+
   to {
     opacity: 1;
     transform: translateY(0px) scale(1);
@@ -16,12 +17,14 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
 
 .page--index {
+
   /* seccion de titulo */
   header {
     .navbar {
@@ -125,6 +128,7 @@
       font-family: "EB Garamond";
     }
   }
+
   .experiences {
     .experiences__container {
       height: 40vh;
@@ -148,6 +152,7 @@
 
       .experiences__container__item {
         font-family: "EB Garamond";
+
         &.img {
           transition: transform 0.5s ease;
         }
@@ -165,11 +170,13 @@
         p {
           font-size: 0.9rem;
         }
+
         ul {
           li {
             font-size: 0.9rem;
           }
         }
+
         .experience-button {
           background-color: #111;
           border: solid 1px #111;
@@ -198,14 +205,17 @@
           font-size: 2.6rem;
           padding: 0 40px;
         }
+
         .titulo__p {
           font-size: 1rem;
           padding: 20px 80px;
         }
       }
     }
+
     .vinos {
       .hover-wrapper {
+
         .wine-2,
         .wine-3 {
           display: none;
@@ -219,6 +229,7 @@
   .page--index {
     .vinos {
       .hover-wrapper {
+
         .wine-4,
         .wine-5,
         .wine-6 {

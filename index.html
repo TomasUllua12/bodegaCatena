@@ -1,247 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bodega Catena Zapata</title>
-    <!-- Bootstrap CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <!-- CSS Styles -->
-    <link rel="stylesheet" href="./css/styles.css">
-    <!-- favicon -->
-    <link rel="icon" type="image/png" href="./medios/favicon.png">
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bodega Catena Zapata</title>
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="./medios/favicon.png">
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
+
 <body class="page--index">
-    <!-- header -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-black p-3">
-            <div class="container">
-              <a class="navbar-brand" href="./index.html"><img src="./medios/logo-bcz.svg" alt="Catena" width="200" height="30"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item mx-1">
-                    <a class="nav-link text-light" href="./pages/familia.html">Family</a>
-                  </li>
-                  <li class="nav-item mx-1">
-                    <a class="nav-link text-light" href="./pages/ncz-page.html">Nicolás Catena Zapata</a>
-                  </li>
-                  <li class="nav-item mx-1">
-                    <a class="nav-link text-light" href="./pages/va-page.html">Adrianna Vineyard</a>
-                  </li>
-                  <li class="nav-item mx-1">
-                    <a class="nav-link text-light" href="./pages/vinos.html">Wines</a>
-                  </li>
-                  <li class="nav-item mx-1">
-                    <a class="nav-link text-light" href="./pages/contacto.html">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </nav>
-    </header>
-
-    <!-- main -->
-    <main>
-
-        <!-- seccion de título -->
-        <section class="titulo">
-            <div class="titulo__contenido">
-                <h1 class="titulo__h1">WORLD’S BEST VINEYARD 2023</h1>
-                <p class="titulo__p">Argentina tops the list as Catena Zapata in Mendoza is voted number one in the World’s Best Vineyards 2023.</p>
-                <button><a class="text-decoration-none text-light" href="https://drive.google.com/file/d/1_zF5wrxGrFkNyiSnP1xLwTBvBX-5iYDr/view" target="_blank">More details</a></button>
-            </div>
-            <div class="titulo__capa"></div>
-            <img src="./medios/piramide.jpg" alt="Pyramid">
-        </section>
-
-        <!-- seccion de vinos -->
-        <section class="vinos container-fluid text-center">
-            <h2 class="text-center mt-5 p-5">OUR WINES</h2>
-            <div class="container d-flex justify-content-center mb-5"> 
-                <div class="col-md-2 col-sm-4 col-6 hover-wrapper">
-                  <img class="wine-img wine-1" data-aos="fade-up" data-aos-duration="1400" src="./medios/wines/NCZV1.png" alt="Nicolas Catena Zapata">
-                </div>
-                <div class="col-md-2 col-sm-4 hover-wrapper">
-                  <img class="wine-img wine-2" data-aos="fade-up" data-aos-duration="1400" src="./medios/wines/MAV2.png" alt="Malbec Argentino">
-                </div>
-                <div class="col-md-2 col-sm-4 hover-wrapper">
-                  <img class="wine-img wine-3" data-aos="fade-up" data-aos-duration="1400" src="./medios/wines/BOCV3.png" alt="Birth of Cabernet">
-                </div>
-                <div class="col-md-2 hover-wrapper">
-                  <img class="wine-img wine-4" data-aos="fade-up" data-aos-duration="1400" src="./medios/wines/NVV4.png" alt="Nicasia Vineyard">
-                </div>
-                <div class="col-md-2 hover-wrapper">
-                  <img class="wine-img wine-5" data-aos="fade-up" data-aos-duration="1400" src="./medios/wines/AVV5.png" alt="Adrianna Vineyard">
-                </div>
-                <div class="col-md-2 hover-wrapper">
-                  <img class="wine-img wine-6" data-aos="fade-up" data-aos-duration="1400" src="./medios/wines/CAV6.png" alt="Catena Alta">
-                </div>
-            </div>
-            <button class="vinos-button m-5 px-5 py-1"><a class="text-decoration-none text-light" href="./pages/vinos.html">See all</a></button>
-        </section>
-        
-        <!-- seccion experiencias -->
-        <section>
-            <div class="titulo-experiencies container text-center">
-                <h2 class="titulo-experiencies__titulo mt-5">OUR EXPERIENCES AT</h2>
-                <h3 class="titulo-experiencies__titulo2">THE PYRAMID</h3>
-                <p class="titulo-experiencies__texto m-4 mb-5">If you plan to visit Mendoza, we would love to host you in our family winery. <br> Our tours are conducted by specialized guides in small groups, so we encourage you to book a date and time in advance.</p>
-            </div>
-            <div class="experiences row container-fluid p-0 m-0">
-
-                <!-- experiencia La Familia Es Todo -->
-                <div class="experiences__container col-md-4 col-sm-12 position-relative">
-                    <a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFamily" aria-controls="offcanvasFamily">
-                        <div class="experiences__container__item--opacity position-absolute top-0 start-0 w-100 h-100 z-1"></div>
-                        <p class="experiences__container__item m-0 position-absolute z-2 top-50 start-50 translate-middle text-white text-center fw-medium">FAMILY IS EVERYTHING</p>
-                        <img class="experiences__container__item img position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-0" src="./medios/experiences/exp1.jpg" alt="FAMILY IS EVERYTHING">
-                    </a>
-                </div>
-                <!-- Offcanvas de FAMILY IS EVERYTHING -->
-                <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" tabindex="-1" id="offcanvasFamily" aria-labelledby="offcanvasFamilyLabel">
-                    <div class="offcanvas-header">
-                      <h5 class="offcanvas-title" id="offcanvasFamilyLabel">FAMILY IS EVERYTHING</h5>
-                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                      <p>From Italy to Mendoza, from Bonarda to Malbec, the story of the Catena Zapata family is part of the history of Argentine wine. Let Catena Zapata’s iconic wines tell you the centuries-old history of the family that redefined the word “wine” in Argentina.</p>
-                      <p>Includes:</p>
-                      <ul>
-                        <li>Winery tour</li>
-                        <li>Tasting of 5 Wines:
-                            <ul>
-                                <li>SAINT FELICIEN Bonarda</li>
-                                <li>D.V. CATENA Malbec-Malbec</li>
-                                <li>ANGÉLICA ZAPATA Chardonnay ALTA</li>
-                                <li>MALBEC ARGENTINO</li>
-                                <li>NICOLÁS CATENA ZAPATA</li>
-                            </ul>
-                        </li>
-                      </ul>
-                      <p>Groups of up to 10 people</p>
-                      <p>Duration: 2hs</p>
-                      <p>Price:</p>
-                      <ul>
-                        <li>AR$ 149,000 p/p valid from May 1, 2025 to June 28, 2025</li>
-                        <li>AR$ 155,000 p/p valid from July 1, 2025 to August 30, 2025</li>
-                      </ul>
-                      <button class="experience-button mt-5 px-4 py-1"><a class="text-decoration-none text-light" href="./pages/contacto.html">Book reservation</a></button>
-                    </div>
-                </div>
-
-                <!-- experiencia Vino & Musica -->
-                <div class="experiences__container col-md-4 col-sm-12 position-relative">
-                    <a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasVinoYMusica" aria-controls="offcanvasVinoYMusica">
-                        <div class="experiences__container__item--opacity position-absolute top-0 start-0 w-100 h-100 z-1"></div>
-                        <p class="experiences__container__item m-0 position-absolute z-2 top-50 start-50 translate-middle text-white text-center fw-medium">WINE & MUSIC</p>
-                        <img class="experiences__container__item img position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-0" src="./medios/experiences/exp2.jpg" alt="WINE & MUSIC">
-                    </a>
-                </div>
-                <!-- Offcanvas de Vino & Musica -->
-                <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" tabindex="-1" id="offcanvasVinoYMusica" aria-labelledby="offcanvasVinoYMusicaLabel">
-                    <div class="offcanvas-header">
-                      <h5 class="offcanvas-title" id="offcanvasVinoYMusicaLabel">WINE & MUSIC</h5>
-                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <p>We invite you to discover a universe of wonderful sensations, tasting and pairing Catena Zapata wines with an eclectic selection of music.</p>
-                        <p>Includes:</p>
-                        <ul>
-                          <li>Winery tour</li>
-                          <li>Musical Sensory Experience + Tasting of 5 wines:
-                              <ul>
-                                  <li>ANGELICA ZAPATA Chardonnay ALTA</li>
-                                  <li>CATENA ALTA Cabernet Sauvignon</li>
-                                  <li>NICASIA Malbec</li>
-                                  <li>MALBEC ARGENTINO</li>
-                                  <li>SAINT FELICIEN NATURE</li>
-                              </ul>
-                          </li>
-                        </ul>
-                        <p>Groups of up to 10 people</p>
-                        <p>Duration: 1:45hs</p>
-                        <p>Price:</p>
-                        <ul>
-                          <li>AR$ 109,000 p/p valid from May 1, 2025 to June 28, 2025</li>
-                          <li>AR$ 114,000 p/p valid from July 1, 2025 to August 30, 2025</li>
-                        </ul>
-                        <button class="experience-button mt-5 px-4 py-1"><a class="text-decoration-none text-light" href="./pages/contacto.html">Book reservation</a></button>
-                    </div>
-                </div>
-                
-                <!-- experiencia The Blending Games -->
-                <div class="experiences__container col-md-4 col-sm-12 position-relative">
-                    <a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBlendingGames" aria-controls="offcanvasBlendingGames">
-                        <div class="experiences__container__item--opacity position-absolute top-0 start-0 w-100 h-100 z-1"></div>
-                        <p class="experiences__container__item m-0 position-absolute z-2 top-50 start-50 translate-middle text-white text-center fw-medium">THE BLENDING GAMES</p>
-                        <img class="experiences__container__item img position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-0" src="./medios/experiences/exp3.jpg" alt="BLENDING GAMES">
-                    </a>
-                </div>
-                <!-- Offcanvas de The Blending Games -->
-                <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" tabindex="-1" id="offcanvasBlendingGames" aria-labelledby="offcanvasBlendingGamesLabel">
-                    <div class="offcanvas-header">
-                      <h5 class="offcanvas-title" id="offcanvasBlendingGamesLabel">THE BLENDING GAMES</h5>
-                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                      <p>Blending wine, just like creating a piece of art, is an essential part of the winemaker’s toolkit. Become a “master blender” for the day and learn how vineyard magic can be turned into delicious wine.</p>
-                      <p>Includes:</p>
-                      <ul>
-                        <li>Winery tour + Blending Session</li>
-                        <li>CATENA ALTA Malbec Components: 5 single-vineyard Malbecs from our Family Estate Vineyards (these wines are not for sale)</li>
-                        <li>CATENA APELLATION White Clay: 2 Components, Semillon and Chenin</li>
-                        <li>CATENA ALTA Malbec</li>
-                      </ul>
-                      <p>Groups of up to 10 people</p>
-                      <p>Duration: 2hs</p>
-                      <p>Price:</p>
-                      <ul>
-                        <li>AR$ 85,000 p/p valid from May 1, 2025 to June 28, 2025</li>
-                        <li>AR$ 89,000 p/p valid from July 1, 2025 to August 30, 2025</li>
-                      </ul>
-                      <button class="experience-button mt-5 px-4 py-1"><a class="text-decoration-none text-light" href="./pages/contacto.html">Book reservation</a></button>
-                  </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- footer -->
-    <footer class="py-3 bg-black">
-        <div class="container d-flex flex-wrap justify-content-between align-items-center">
-            <div class="col-6 col-md-2 d-flex align-items-center">
-                <img class="footer-img" src="./medios/since.svg" alt="Since 1902">  
-            </div>
-        
-            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3"><a class="text-light" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
-                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
-                </svg></a></li>
-                <li class="ms-3"><a class="text-light" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-                </svg></a></li>
-                <li class="ms-3"><a class="text-light" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-                </svg></a></li>
-                <li class="ms-3"><a class="text-light" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
-                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
-                </svg></a></li>
-            </ul>
+  <!-- header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black p-3">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html"><img src="./medios/logo-bcz.svg" alt="Catena" width="200"
+            height="30"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-1">
+              <a class="nav-link text-light" href="./pages/familia.html">Family</a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link text-light" href="./pages/ncz-page.html">Nicolás Catena Zapata</a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link text-light" href="./pages/va-page.html">Adrianna Vineyard</a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link text-light" href="./pages/vinos.html">Wines</a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link text-light" href="./pages/contacto.html">Contact</a>
+            </li>
+          </ul>
         </div>
-    </footer>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Bootstrap CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  <!-- main -->
+  <main>
 
-    <!-- AOS -->
-    <script>
-        AOS.init();
-    </script>
+    <!-- seccion de título -->
+    <section class="titulo">
+      <div class="titulo__contenido">
+        <h1 class="titulo__h1">WORLD’S BEST VINEYARD 2023</h1>
+        <p class="titulo__p">Argentina tops the list as Catena Zapata in Mendoza is voted number one in the World’s Best
+          Vineyards 2023.</p>
+        <button><a class="text-decoration-none text-light"
+            href="https://drive.google.com/file/d/1_zF5wrxGrFkNyiSnP1xLwTBvBX-5iYDr/view" target="_blank">More
+            details</a></button>
+      </div>
+      <div class="titulo__capa"></div>
+      <img src="./medios/piramide.jpg" alt="Pyramid">
+    </section>
+
+    <!-- seccion de vinos -->
+    <section class="vinos container-fluid text-center">
+      <h2 class="text-center mt-5 p-5">OUR WINES</h2>
+      <div class="container d-flex justify-content-center mb-5">
+        <div class="col-md-2 col-sm-4 col-6 hover-wrapper">
+          <img class="wine-img wine-1" data-aos="fade-up" data-aos-duration="1400" src="./medios/wines/NCZV1.png"
+            alt="Nicolas Catena Zapata">
+        </div>
+        <div class="col-md-2 col-sm-4 hover-wrapper">
+          <img class="wine-img wine-2" data-aos="fade-up" data-aos-duration="1400" src="./medios/wines/MAV2.png"
+            alt="Malbec Argentino">
+        </div>
+        <div class="col-md-2 col-sm-4 hover-wrapper">
+          <img class="wine-img wine-3" data-aos="fade-up" data-aos-duration="1400" src="./medios/wines/BOCV3.png"
+            alt="Birth of Cabernet">
+        </div>
+        <div class="col-md-2 hover-wrapper">
+          <img class="wine-img wine-4" data-aos="fade-up" data-aos-duration="1400" src="./medios/wines/NVV4.png"
+            alt="Nicasia Vineyard">
+        </div>
+        <div class="col-md-2 hover-wrapper">
+          <img class="wine-img wine-5" data-aos="fade-up" data-aos-duration="1400" src="./medios/wines/AVV5.png"
+            alt="Adrianna Vineyard">
+        </div>
+        <div class="col-md-2 hover-wrapper">
+          <img class="wine-img wine-6" data-aos="fade-up" data-aos-duration="1400" src="./medios/wines/CAV6.png"
+            alt="Catena Alta">
+        </div>
+      </div>
+      <button class="vinos-button m-5 px-5 py-1"><a class="text-decoration-none text-light"
+          href="./pages/vinos.html">See all</a></button>
+    </section>
+
+    <!-- seccion experiencias -->
+    <section>
+      <div class="titulo-experiencies container text-center">
+        <h2 class="titulo-experiencies__titulo mt-5">OUR EXPERIENCES AT</h2>
+        <h3 class="titulo-experiencies__titulo2">THE PYRAMID</h3>
+        <p class="titulo-experiencies__texto m-4 mb-5">If you plan to visit Mendoza, we would love to host you in our
+          family winery. <br> Our tours are conducted by specialized guides in small groups, so we encourage you to book
+          a date and time in advance.</p>
+      </div>
+      <div class="experiences row container-fluid p-0 m-0">
+
+        <!-- experiencia La Familia Es Todo -->
+        <div class="experiences__container col-md-4 col-sm-12 position-relative">
+          <a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFamily" aria-controls="offcanvasFamily">
+            <div class="experiences__container__item--opacity position-absolute top-0 start-0 w-100 h-100 z-1"></div>
+            <p
+              class="experiences__container__item m-0 position-absolute z-2 top-50 start-50 translate-middle text-white text-center fw-medium">
+              FAMILY IS EVERYTHING</p>
+            <img
+              class="experiences__container__item img position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-0"
+              src="./medios/experiences/exp1.jpg" alt="FAMILY IS EVERYTHING">
+          </a>
+        </div>
+        <!-- Offcanvas de FAMILY IS EVERYTHING -->
+        <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" tabindex="-1" id="offcanvasFamily"
+          aria-labelledby="offcanvasFamilyLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasFamilyLabel">FAMILY IS EVERYTHING</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <p>From Italy to Mendoza, from Bonarda to Malbec, the story of the Catena Zapata family is part of the
+              history of Argentine wine. Let Catena Zapata’s iconic wines tell you the centuries-old history of the
+              family that redefined the word “wine” in Argentina.</p>
+            <p>Includes:</p>
+            <ul>
+              <li>Winery tour</li>
+              <li>Tasting of 5 Wines:
+                <ul>
+                  <li>SAINT FELICIEN Bonarda</li>
+                  <li>D.V. CATENA Malbec-Malbec</li>
+                  <li>ANGÉLICA ZAPATA Chardonnay ALTA</li>
+                  <li>MALBEC ARGENTINO</li>
+                  <li>NICOLÁS CATENA ZAPATA</li>
+                </ul>
+              </li>
+            </ul>
+            <p>Groups of up to 10 people</p>
+            <p>Duration: 2hs</p>
+            <p>Price:</p>
+            <ul>
+              <li>AR$ 149,000 p/p valid from May 1, 2025 to June 28, 2025</li>
+              <li>AR$ 155,000 p/p valid from July 1, 2025 to August 30, 2025</li>
+            </ul>
+            <button class="experience-button mt-5 px-4 py-1"><a class="text-decoration-none text-light"
+                href="./pages/contacto.html">Book reservation</a></button>
+          </div>
+        </div>
+
+        <!-- experiencia Vino & Musica -->
+        <div class="experiences__container col-md-4 col-sm-12 position-relative">
+          <a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasVinoYMusica"
+            aria-controls="offcanvasVinoYMusica">
+            <div class="experiences__container__item--opacity position-absolute top-0 start-0 w-100 h-100 z-1"></div>
+            <p
+              class="experiences__container__item m-0 position-absolute z-2 top-50 start-50 translate-middle text-white text-center fw-medium">
+              WINE & MUSIC</p>
+            <img
+              class="experiences__container__item img position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-0"
+              src="./medios/experiences/exp2.jpg" alt="WINE & MUSIC">
+          </a>
+        </div>
+        <!-- Offcanvas de Vino & Musica -->
+        <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" tabindex="-1"
+          id="offcanvasVinoYMusica" aria-labelledby="offcanvasVinoYMusicaLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasVinoYMusicaLabel">WINE & MUSIC</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <p>We invite you to discover a universe of wonderful sensations, tasting and pairing Catena Zapata wines
+              with an eclectic selection of music.</p>
+            <p>Includes:</p>
+            <ul>
+              <li>Winery tour</li>
+              <li>Musical Sensory Experience + Tasting of 5 wines:
+                <ul>
+                  <li>ANGELICA ZAPATA Chardonnay ALTA</li>
+                  <li>CATENA ALTA Cabernet Sauvignon</li>
+                  <li>NICASIA Malbec</li>
+                  <li>MALBEC ARGENTINO</li>
+                  <li>SAINT FELICIEN NATURE</li>
+                </ul>
+              </li>
+            </ul>
+            <p>Groups of up to 10 people</p>
+            <p>Duration: 1:45hs</p>
+            <p>Price:</p>
+            <ul>
+              <li>AR$ 109,000 p/p valid from May 1, 2025 to June 28, 2025</li>
+              <li>AR$ 114,000 p/p valid from July 1, 2025 to August 30, 2025</li>
+            </ul>
+            <button class="experience-button mt-5 px-4 py-1"><a class="text-decoration-none text-light"
+                href="./pages/contacto.html">Book reservation</a></button>
+          </div>
+        </div>
+
+        <!-- experiencia The Blending Games -->
+        <div class="experiences__container col-md-4 col-sm-12 position-relative">
+          <a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBlendingGames"
+            aria-controls="offcanvasBlendingGames">
+            <div class="experiences__container__item--opacity position-absolute top-0 start-0 w-100 h-100 z-1"></div>
+            <p
+              class="experiences__container__item m-0 position-absolute z-2 top-50 start-50 translate-middle text-white text-center fw-medium">
+              THE BLENDING GAMES</p>
+            <img
+              class="experiences__container__item img position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-0"
+              src="./medios/experiences/exp3.jpg" alt="BLENDING GAMES">
+          </a>
+        </div>
+        <!-- Offcanvas de The Blending Games -->
+        <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" tabindex="-1"
+          id="offcanvasBlendingGames" aria-labelledby="offcanvasBlendingGamesLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBlendingGamesLabel">THE BLENDING GAMES</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <p>Blending wine, just like creating a piece of art, is an essential part of the winemaker’s toolkit. Become
+              a “master blender” for the day and learn how vineyard magic can be turned into delicious wine.</p>
+            <p>Includes:</p>
+            <ul>
+              <li>Winery tour + Blending Session</li>
+              <li>CATENA ALTA Malbec Components: 5 single-vineyard Malbecs from our Family Estate Vineyards (these wines
+                are not for sale)</li>
+              <li>CATENA APELLATION White Clay: 2 Components, Semillon and Chenin</li>
+              <li>CATENA ALTA Malbec</li>
+            </ul>
+            <p>Groups of up to 10 people</p>
+            <p>Duration: 2hs</p>
+            <p>Price:</p>
+            <ul>
+              <li>AR$ 85,000 p/p valid from May 1, 2025 to June 28, 2025</li>
+              <li>AR$ 89,000 p/p valid from July 1, 2025 to August 30, 2025</li>
+            </ul>
+            <button class="experience-button mt-5 px-4 py-1"><a class="text-decoration-none text-light"
+                href="./pages/contacto.html">Book reservation</a></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="py-3 bg-black">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+      <div class="col-6 col-md-2 d-flex align-items-center">
+        <img class="footer-img" src="./medios/since.svg" alt="Since 1902">
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-light" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+              <path
+                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+            </svg></a></li>
+        <li class="ms-3"><a class="text-light" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+            </svg></a></li>
+        <li class="ms-3"><a class="text-light" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+            </svg></a></li>
+        <li class="ms-3"><a class="text-light" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+              <path
+                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+            </svg></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Bootstrap CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+
+  <!-- AOS -->
+  <script>
+    AOS.init();
+  </script>
 </body>
+
 </html>
